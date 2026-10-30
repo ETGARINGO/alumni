@@ -5,25 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>HRMSC | Official Shirt Order Form</title>
     
-    <link rel="icon" type="image/png" href="PIN.png">
-    <!-- Google Fonts for crisp typography -->
+    <link rel="icon" type="image/png" href="alumnishirt.png">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --corporate-navy: #0f172a;
-            --corporate-slate: #1e293b;
-            --corporate-slate-light: #334155;
-            --corporate-blue: #0284c7;
-            --corporate-blue-hover: #0ea5e9;
-            --accent-gold: #d97706;
+            --corporate-navy: #0b132b;
+            --corporate-slate: #1c2541;
+            --corporate-slate-light: #3a506b;
+            --corporate-blue: #0077b6;
+            --corporate-blue-hover: #0096c7;
+            --accent-gold: #f4a261;
             --gcash-blue: #007DF4;
-            --success-green: #10b981;
+            --success-green: #2a9d8f;
             --text-light: #f8fafc;
             --text-muted: #94a3b8;
-            --glass-bg: rgba(30, 41, 59, 0.85);
+            --glass-bg: rgba(28, 37, 65, 0.85);
             --border-subtle: rgba(148, 163, 184, 0.15);
-            --shadow-elevation: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
+            --shadow-elevation: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
         }
 
         * {
@@ -37,7 +37,7 @@
             width: 100%; 
             overflow: hidden; 
             background-color: var(--corporate-navy); 
-            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
             color: var(--text-light);
             user-select: none;
             -webkit-user-select: none;
@@ -52,7 +52,7 @@
             height: 100%;
             object-fit: cover; 
             z-index: 0; 
-            opacity: 0.04;
+            opacity: 0.05;
             mix-blend-mode: luminosity; 
             pointer-events: none;
         }
@@ -149,7 +149,6 @@
             width: 100%; 
             height: 100%;
             z-index: 100; 
-            display: block; 
         }
 
         .viewport-grid {
@@ -180,7 +179,6 @@
             box-shadow: var(--shadow-elevation);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            transition: opacity 0.4s ease, transform 0.4s ease;
         }
 
         #folder-pane { 
@@ -188,6 +186,7 @@
             opacity: 0; 
             transform: scaleX(0); 
             pointer-events: none; 
+            transition: opacity 0.4s ease, transform 0.4s ease;
         }
         
         .show-archive #folder-pane {
@@ -197,7 +196,7 @@
         }
 
         .pane-header {
-            background: rgba(15, 23, 42, 0.95); 
+            background: rgba(11, 19, 43, 0.95); 
             padding: 12px 18px;
             font-size: 10px; 
             font-weight: 700; 
@@ -229,13 +228,13 @@
             cursor: pointer; 
             transition: all 0.2s;
         }
-        .view-toggle-btn:hover { background: #38bdf8; color: #0f172a; }
+        .view-toggle-btn:hover { background: #38bdf8; color: #0b132b; }
 
         .iframe-wrapper {
             position: relative;
             width: 100%;
             height: 100%;
-            background: rgba(15, 23, 42, 0.5);
+            background: rgba(11, 19, 43, 0.5);
         }
 
         iframe { 
@@ -299,7 +298,7 @@
         #gcash-modal {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(15, 23, 42, 0.8);
+            background: rgba(11, 19, 43, 0.8);
             backdrop-filter: blur(8px);
             z-index: 4500;
             display: flex;
@@ -385,7 +384,7 @@
             <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 5px;">Official GCash Account</h3>
             <p style="font-size: 11px; color: var(--text-muted); margin-bottom: 20px;">Use this account for all official HRMSC shirt order payments.</p>
             
-            <div style="background: rgba(15, 23, 42, 0.6); border: 1px solid var(--border-subtle); padding: 12px; border-radius: 8px; margin-bottom: 20px;">
+            <div style="background: rgba(11, 19, 43, 0.6); border: 1px solid var(--border-subtle); padding: 12px; border-radius: 8px; margin-bottom: 20px;">
                 <div style="font-size: 10px; color: var(--text-muted); text-transform: uppercase;">Account Name</div>
                 <div style="font-size: 13px; font-weight: 600; color: #fff; margin-bottom: 6px;">IBUMAAA</div>
                 <div style="font-size: 10px; color: var(--text-muted); text-transform: uppercase;">Mobile Number</div>
